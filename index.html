@@ -1,0 +1,2187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>God's Love Gadgets - Premium Phone Accessories</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #4e54c8;
+            --secondary: #8f94fb;
+            --accent: #ff6b6b;
+            --light: #f8f9fa;
+            --dark: #212529;
+            --success: #28a745;
+            --page-bg: #f9fafb;
+            --card-bg: #ffffff;
+            --transition: all 0.3s ease;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        body {
+            background-color: var(--page-bg);
+            color: var(--dark);
+            line-height: 1.6;
+            overflow-x: hidden;
+            position: relative;
+        }
+        
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle, rgba(143,148,251,0.05) 0%, rgba(255,255,255,0) 70%);
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        /* Header Styles */
+        header {
+            background: white;
+            padding: 1rem 0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            position: relative;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .logo-img {
+            height: 70px;
+            width: 70px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #4e54c8, #000);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: var(--transition);
+        }
+        
+        .logo:hover .logo-img {
+            transform: rotate(10deg);
+        }
+        
+        .logo-text {
+            font-size: 1.5rem;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+            background: linear-gradient(to right, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .tagline {
+            font-size: 0.9rem;
+            color: var(--primary);
+            font-weight: 500;
+            margin-top: 3px;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 15px;
+        }
+        
+        nav ul li a {
+            color: var(--dark);
+            text-decoration: none;
+            font-weight: 500;
+            padding: 8px 12px;
+            border-radius: 50px;
+            transition: var(--transition);
+            position: relative;
+            font-size: 0.9rem;
+        }
+        
+        nav ul li a:hover {
+            color: var(--primary);
+        }
+        
+        nav ul li a.active {
+            background: linear-gradient(to right, var(--primary), var(--secondary));
+            color: white;
+        }
+        
+        nav ul li a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 2px;
+            background: var(--primary);
+            transition: var(--transition);
+        }
+        
+        nav ul li a:hover::after,
+        nav ul li a.active::after {
+            width: 70%;
+        }
+        
+        .mobile-menu-btn {
+            display: none;
+            background: transparent;
+            border: none;
+            color: var(--dark);
+            font-size: 1.5rem;
+            cursor: pointer;
+            z-index: 1010;
+        }
+        
+        /* Page Content Styles */
+        .page-content {
+            padding: 2rem 0;
+            min-height: 60vh;
+        }
+        
+        .page-hero {
+            background: linear-gradient(rgba(78, 84, 200, 0.9), rgba(143, 148, 251, 0.9));
+            color: white;
+            text-align: center;
+            padding: 3rem 1rem;
+            border-radius: 15px;
+            margin-bottom: 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .page-hero::before {
+            content: "";
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 70%);
+            transform: rotate(30deg);
+            pointer-events: none;
+        }
+        
+        .page-hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            position: relative;
+        }
+        
+        .page-hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+            position: relative;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin: 1.5rem 0 2rem;
+            position: relative;
+        }
+        
+        .section-title h2 {
+            font-size: 2rem;
+            color: var(--primary);
+            display: inline-block;
+            padding: 0 15px;
+            position: relative;
+            z-index: 2;
+            background: var(--page-bg);
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(to right, var(--primary), var(--secondary));
+            z-index: 1;
+        }
+        
+        /* Product Grid */
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        
+        .product-card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+        }
+        
+        .product-badges {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            z-index: 2;
+            display: flex;
+            gap: 5px;
+        }
+        
+        .badge {
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+        
+        .badge.new {
+            background: var(--success);
+            color: white;
+        }
+        
+        .badge.discount {
+            background: var(--accent);
+            color: white;
+        }
+        
+        .badge.stock {
+            background: #ff9e44;
+            color: white;
+        }
+        
+        .product-image {
+            height: 180px;
+            background: #f8f9fa;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            position: relative;
+            cursor: pointer;
+        }
+        
+        .product-image::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, rgba(78,84,200,0.1), rgba(143,148,251,0.1));
+            opacity: 0;
+            transition: var(--transition);
+            z-index: 1;
+        }
+        
+        .product-card:hover .product-image::before {
+            opacity: 1;
+        }
+        
+        .product-image img {
+            width: 80%;
+            height: 80%;
+            object-fit: contain;
+            transition: transform 0.5s ease;
+            z-index: 2;
+        }
+        
+        .product-card:hover .product-image img {
+            transform: scale(1.05);
+        }
+        
+        .product-info {
+            padding: 15px;
+        }
+        
+        .product-brand {
+            color: #666;
+            font-size: 0.85rem;
+            margin-bottom: 5px;
+        }
+        
+        .product-info h3 {
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+        }
+        
+        .product-rating {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            margin-bottom: 8px;
+        }
+        
+        .stars {
+            color: #ffc107;
+        }
+        
+        .rating-count {
+            color: #666;
+            font-size: 0.85rem;
+        }
+        
+        .product-price {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin: 8px 0;
+        }
+        
+        .current-price {
+            color: var(--success);
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+        
+        .original-price {
+            color: #999;
+            text-decoration: line-through;
+            font-size: 0.9rem;
+        }
+        
+        .product-specs {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin: 12px 0;
+            font-size: 0.85rem;
+        }
+        
+        .product-specs span {
+            background: #f0f2f5;
+            padding: 4px 8px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            transition: var(--transition);
+            box-shadow: 0 3px 10px rgba(78, 84, 200, 0.3);
+            border: none;
+            cursor: pointer;
+            font-size: 0.9rem;
+            margin: 8px 3px;
+        }
+        
+        .btn:hover {
+            background: var(--secondary);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(78, 84, 200, 0.4);
+        }
+        
+        .btn-outline {
+            background: transparent;
+            border: 2px solid var(--primary);
+            color: var(--primary);
+        }
+        
+        .btn-outline:hover {
+            background: var(--primary);
+            color: white;
+        }
+        
+        .btn-disabled {
+            background: #cccccc;
+            cursor: not-allowed;
+        }
+        
+        .btn-disabled:hover {
+            transform: none;
+            box-shadow: none;
+            background: #cccccc;
+        }
+        
+        .btn-whatsapp {
+            background: #25D366;
+            border: 2px solid #25D366;
+        }
+        
+        .btn-whatsapp:hover {
+            background: #128C7E;
+            border-color: #128C7E;
+            color: white;
+        }
+        
+        /* Footer Styles */
+        footer {
+            background: var(--dark);
+            color: white;
+            padding: 2.5rem 0 1.5rem;
+            margin-top: 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        footer::before {
+            content: "";
+            position: absolute;
+            top: -100px;
+            right: -100px;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(143,148,251,0.1) 0%, rgba(143,148,251,0) 70%);
+            pointer-events: none;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+            margin-bottom: 1.5rem;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .footer-section h3 {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            position: relative;
+            padding-bottom: 8px;
+        }
+        
+        .footer-section h3::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 40px;
+            height: 2px;
+            background: var(--secondary);
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 8px;
+        }
+        
+        .footer-links a {
+            color: #adb5bd;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            font-size: 0.9rem;
+            display: inline-block;
+            position: relative;
+        }
+        
+        .footer-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background: white;
+            transition: width 0.3s ease;
+        }
+        
+        .footer-links a:hover {
+            color: white;
+        }
+        
+        .footer-links a:hover::after {
+            width: 100%;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 12px;
+            margin-top: 12px;
+        }
+        
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            height: 36px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            color: white;
+            transition: var(--transition);
+            font-size: 1rem;
+        }
+        
+        .social-links a:hover {
+            background: var(--secondary);
+            transform: translateY(-2px);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 15px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #adb5bd;
+            font-size: 0.85rem;
+            position: relative;
+            z-index: 2;
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .nav-container {
+                flex-direction: column;
+                gap: 12px;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                display: none;
+            }
+            
+            nav ul.show {
+                display: flex;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+                position: absolute;
+                top: 15px;
+                right: 15px;
+            }
+            
+            .page-hero {
+                padding: 2rem 1rem;
+            }
+            
+            .page-hero h1 {
+                font-size: 2rem;
+            }
+            
+            .page-hero p {
+                font-size: 1.1rem;
+            }
+            
+            .section-title h2 {
+                font-size: 1.8rem;
+            }
+            
+            .product-grid {
+                grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+                gap: 15px;
+            }
+            
+            .btn {
+                padding: 8px 16px;
+                font-size: 0.85rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .container {
+                width: 95%;
+                padding: 0 10px;
+            }
+            
+            .logo-text {
+                font-size: 1.3rem;
+            }
+            
+            .tagline {
+                font-size: 0.8rem;
+            }
+            
+            .page-hero {
+                padding: 1.5rem 1rem;
+            }
+            
+            .page-hero h1 {
+                font-size: 1.8rem;
+            }
+            
+            .page-hero p {
+                font-size: 1rem;
+            }
+            
+            .product-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .product-info {
+                padding: 12px;
+            }
+            
+            .btn {
+                width: 100%;
+                margin: 5px 0;
+                text-align: center;
+            }
+        }
+        
+        /* Page Navigation */
+        .page {
+            display: none;
+            animation: fadeIn 0.5s ease;
+        }
+        
+        .page.active {
+            display: block;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        /* Gallery Grid */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 15px;
+        }
+        
+        .gallery-item {
+            background: var(--card-bg);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.07);
+            transition: transform 0.3s ease;
+        }
+        
+        .gallery-item:hover {
+            transform: translateY(-5px);
+        }
+        
+        .gallery-img {
+            height: 200px;
+            background: #f8f9fa;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        
+        .gallery-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .gallery-content {
+            padding: 15px;
+        }
+        
+        /* Contact Form */
+        .contact-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+        
+        .contact-info {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.04);
+        }
+        
+        .contact-detail {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .contact-icon {
+            width: 45px;
+            height: 45px;
+            background: linear-gradient(to right, var(--primary), var(--secondary));
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            margin-right: 12px;
+        }
+        
+        .contact-form {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.04);
+        }
+        
+        .form-group {
+            margin-bottom: 15px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+        
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 10px 12px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            transition: var(--transition);
+        }
+        
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            border-color: var(--primary);
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(78, 84, 200, 0.1);
+        }
+        
+        .form-group textarea {
+            height: 120px;
+            resize: vertical;
+        }
+        
+        /* Cart Page */
+        .cart {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        #cart-items {
+            list-style: none;
+            margin-bottom: 1.2rem;
+        }
+        
+        #cart-items li {
+            padding: 0.8rem;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        #cart-items li .cart-item-details {
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        
+        #cart-items li .cart-item-price {
+            font-weight: bold;
+            margin-left: 12px;
+            font-size: 1.1rem;
+        }
+        
+        #cart-items li .cart-item-actions {
+            display: flex;
+            gap: 8px;
+            margin-left: 12px;
+        }
+        
+        #cart-items li .cart-item-actions button {
+            background: var(--accent);
+            color: white;
+            border: none;
+            border-radius: 4px;
+            width: 28px;
+            height: 28px;
+            cursor: pointer;
+        }
+        
+        #total {
+            font-size: 1.3rem;
+            color: var(--success);
+            font-weight: bold;
+            text-align: right;
+            margin-top: 15px;
+        }
+        
+        /* About Page */
+        .about-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+        
+        .about-image {
+            background: linear-gradient(45deg, var(--primary), var(--secondary));
+            border-radius: 15px;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.3rem;
+            font-weight: 700;
+            box-shadow: 0 8px 25px rgba(78, 84, 200, 0.25);
+            flex-direction: column;
+            text-align: center;
+            padding: 15px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .about-image::before {
+            content: "";
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 70%);
+            transform: rotate(30deg);
+            pointer-events: none;
+        }
+        
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+            margin-top: 1.5rem;
+        }
+        
+        .team-card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.07);
+            text-align: center;
+            transition: var(--transition);
+        }
+        
+        .team-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .team-img {
+            height: 180px;
+            background: #f8f9fa;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        
+        .team-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        /* Search Bar */
+        .search-bar {
+            width: 100%;
+            max-width: 500px;
+            position: relative;
+            margin: 1.5rem auto;
+        }
+        
+        .search-bar input {
+            width: 100%;
+            padding: 10px 15px;
+            border: 2px solid var(--primary);
+            border-radius: 50px;
+            font-size: 0.95rem;
+            transition: var(--transition);
+        }
+        
+        .search-bar input:focus {
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(78, 84, 200, 0.2);
+        }
+        
+        .search-bar button {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: transparent;
+            border: none;
+            color: var(--primary);
+            cursor: pointer;
+            font-size: 1.1rem;
+        }
+        
+        /* Contact Methods */
+        .contact-methods {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 25px;
+            flex-wrap: wrap;
+        }
+        
+        .contact-method {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            border-radius: 10px;
+            background: var(--card-bg);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            transition: var(--transition);
+            cursor: pointer;
+            width: 220px;
+        }
+        
+        .contact-method:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+        }
+        
+        .contact-method i {
+            font-size: 1.8rem;
+            margin-right: 10px;
+        }
+        
+        .contact-method.whatsapp {
+            color: #25D366;
+        }
+        
+        .contact-method.instagram {
+            color: #E1306C;
+        }
+        
+        .contact-method.facebook {
+            color: #4267B2;
+        }
+        
+        .contact-method.phone {
+            color: var(--primary);
+        }
+        
+        /* Customer Form */
+        .customer-form {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            max-width: 600px;
+            margin: 20px auto;
+        }
+        
+        .form-title {
+            text-align: center;
+            margin-bottom: 20px;
+            color: var(--primary);
+        }
+        
+        /* Animation */
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        /* Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.7);
+            z-index: 10000;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .modal-content {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            max-width: 800px;
+            width: 90%;
+            position: relative;
+            animation: fadeIn 0.5s ease;
+        }
+        
+        .close-modal {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            font-size: 1.5rem;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            color: #888;
+            transition: var(--transition);
+        }
+        
+        .close-modal:hover {
+            color: var(--accent);
+        }
+        
+        .product-modal {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+        
+        .product-modal-image {
+            background: #f8f9fa;
+            border-radius: 10px;
+            height: 350px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .product-modal-image img {
+            max-width: 80%;
+            max-height: 80%;
+            object-fit: contain;
+        }
+        
+        /* Quantity controls */
+        .quantity-controls {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin: 15px 0;
+        }
+        
+        .quantity-btn {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: #f0f2f5;
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        
+        .quantity-btn:hover {
+            background: var(--secondary);
+            color: white;
+        }
+        
+        .quantity {
+            font-size: 1.1rem;
+            font-weight: bold;
+            min-width: 30px;
+            text-align: center;
+        }
+        
+        /* Floating cart indicator */
+        .cart-indicator {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: var(--primary);
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            box-shadow: 0 5px 15px rgba(78, 84, 200, 0.4);
+            cursor: pointer;
+            z-index: 100;
+            transition: var(--transition);
+        }
+        
+        .cart-indicator:hover {
+            transform: translateY(-5px);
+            background: var(--secondary);
+        }
+        
+        .cart-count {
+            position: absolute;
+            top: -5px;
+            right: -5px;
+            background: var(--accent);
+            color: white;
+            font-size: 0.8rem;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+        
+        /* Toast notification */
+        .toast {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--success);
+            color: white;
+            padding: 12px 25px;
+            border-radius: 50px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            z-index: 100;
+            display: none;
+            animation: slideUp 0.3s ease;
+        }
+        
+        @keyframes slideUp {
+            from { bottom: -50px; opacity: 0; }
+            to { bottom: 20px; opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Floating cart indicator -->
+    <div class="cart-indicator" data-page="cart">
+        <i class="fas fa-shopping-cart"></i>
+        <div class="cart-count" id="floating-cart-count">0</div>
+    </div>
+    
+    <!-- Toast notification -->
+    <div class="toast" id="toast"></div>
+    
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="nav-container">
+                <div class="logo">
+                    <div class="logo-img">
+                        <div style="color: white; font-size: 1.5rem; font-weight: bold;">GLG</div>
+                    </div>
+                    <div>
+                        <div class="logo-text">God's Love Gadgets</div>
+                        <div class="tagline">Affordable phone accessories</div>
+                    </div>
+                </div>
+                
+                <nav>
+                    <button class="mobile-menu-btn">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <ul id="nav-menu">
+                        <li><a href="#" class="nav-link active" data-page="home">Home</a></li>
+                        <li><a href="#" class="nav-link" data-page="products">Products</a></li>
+                        <li><a href="#" class="nav-link" data-page="about">About</a></li>
+                        <li><a href="#" class="nav-link" data-page="contact">Contact</a></li>
+                        <li><a href="#" class="nav-link" data-page="cart">Cart (<span id="cart-count">0</span>)</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Pages -->
+    <main>
+        <!-- Home Page -->
+        <div id="home" class="page active page-content">
+            <div class="container">
+                <section class="page-hero">
+                    <h1>Premium Gadgets at Affordable Prices</h1>
+                    <p>Your one-stop shop for quality phone accessories and gadgets</p>
+                    <a href="#" class="btn pulse" data-page="products">Shop Now</a>
+                </section>
+                
+                <div class="section-title">
+                    <h2>Featured Products</h2>
+                </div>
+                
+                <div class="product-grid">
+                    <!-- Products will be loaded dynamically -->
+                </div>
+                
+                <div class="section-title">
+                    <h2>Customer Testimonials</h2>
+                </div>
+                
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <div class="gallery-content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>"The AirPods I bought from God's Love Gadgets are amazing! The sound quality is top-notch and the service was excellent."</p>
+                            <p><strong>- Fakunle James</strong></p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <div class="gallery-content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <p>"Fast delivery and genuine products. The power bank I ordered works perfectly and holds charge for days. Highly recommended!"</p>
+                            <p><strong>- David Comfort Oluwatosin</strong></p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <div class="gallery-content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>"I was skeptical at first, but the phone case I got is really durable. It has protected my phone from several drops already."</p>
+                            <p><strong>- Odeyemi Rhoda</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Products Page -->
+        <div id="products" class="page page-content">
+            <div class="container">
+                <section class="page-hero">
+                    <h1>Premium Phone Accessories</h1>
+                    <p>Discover our collection of high-quality gadgets from top brands</p>
+                </section>
+                
+                <div class="search-bar">
+                    <input type="text" id="search-input" placeholder="Search products...">
+                    <button id="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+                
+                <div class="product-grid">
+                    <!-- Products will be loaded dynamically -->
+                </div>
+            </div>
+        </div>
+
+        <!-- About Page -->
+        <div id="about" class="page page-content">
+            <div class="container">
+                <section class="page-hero">
+                    <h1>About God's Love Gadgets</h1>
+                    <p>Your trusted source for quality phone accessories</p>
+                </section>
+                
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2>Our Story</h2>
+                        <p>Founded in 2024, God's Love Gadgets started as a small online business in Ibadan with a mission to provide high-quality phone accessories at affordable prices. Our name reflects our commitment to serving our customers with love and integrity.</p>
+                        
+                        <p>What began as a passion project has grown into a thriving business serving customers across Ibadan South-west. We pride ourselves on offering only genuine products backed by warranties and excellent customer service.</p>
+                        
+                        <h2>Our Mission</h2>
+                        <p>Our mission is to provide premium phone gadgets and accessories at prices that reflect God's love for all. We believe everyone deserves access to quality tech accessories without breaking the bank.</p>
+                        
+                        <h2>Why Choose Us</h2>
+                        <ul>
+                            <li>100% genuine products with manufacturer warranties</li>
+                            <li>Affordable prices without compromising on quality</li>
+                            <li>Fast and reliable service</li>
+                            <li>Knowledgeable and friendly customer support</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="about-image">
+                        <h3>Since 2024</h3>
+                        <p>Serving Nigeria with Love</p>
+                    </div>
+                </div>
+                
+                <div class="section-title">
+                    <h2>Our Team</h2>
+                </div>
+                
+                <div class="team-grid">
+                    <div class="team-card">
+                        <div class="team-img">
+                            <img src="paul.jpg" alt="Paul Oluwanifemi">
+                        </div>
+                        <div class="team-info">
+                            <h3>Paul Oluwanifemi</h3>
+                            <p>Founder & CEO</p>
+                            <p>09013755971</p>
+                        </div>
+                    </div>
+                    
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Page -->
+        <div id="contact" class="page page-content">
+            <div class="container">
+                <section class="page-hero">
+                    <h1>Contact Us</h1>
+                    <p>Get in touch with God's Love Gadgets</p>
+                </section>
+                
+                <div class="contact-methods">
+                    <div class="contact-method whatsapp" id="whatsapp-contact">
+                        <i class="fab fa-whatsapp"></i>
+                        <div>
+                            <h3>WhatsApp</h3>
+                            <p>09013755971</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-method instagram" id="instagram-contact">
+                        <i class="fab fa-instagram"></i>
+                        <div>
+                            <h3>Instagram</h3>
+                            <p>@glc_608</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-method facebook" id="facebook-contact">
+                        <i class="fab fa-facebook"></i>
+                        <div>
+                            <h3>Facebook</h3>
+                            <p>God's Love Gadgets</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-method phone" id="phone-contact">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Call Us</h3>
+                            <p>09013755971</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="section-title">
+                    <h2>Visit Us</h2>
+                </div>
+                
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <h2>Contact Information</h2>
+                        
+                        <div class="contact-detail">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Phone</h3>
+                                <p>09013755971</p>
+                                <p>07043755454</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-detail">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Email Address</h3>
+                                <p>pauloluwanifemi608@gmail.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-detail">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Business Hours</h3>
+                                <p>Monday - Friday: 9am - 5pm</p>
+                                <p>Saturday: 10am - 4pm</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-detail">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Store Location</h3>
+                                <p>123 Tech Street, Ibadan, Nigeria</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form">
+                        <h2>Send Us a Message</h2>
+                        <form id="contact-form">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Your Message</label>
+                                <textarea id="message" required></textarea>
+                            </div>
+                            <button type="button" class="btn" id="send-message">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cart Page -->
+        <div id="cart" class="page page-content">
+            <div class="container">
+                <section class="page-hero">
+                    <h1>Your Shopping Cart</h1>
+                    <p>Review your selected items</p>
+                </section>
+                
+                <div class="customer-form">
+                    <h2 class="form-title">Customer Information</h2>
+                    <form id="customer-info-form">
+                        <div class="form-group">
+                            <label for="full-name">Full Name *</label>
+                            <input type="text" id="full-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone-number">Phone Number *</label>
+                            <input type="tel" id="phone-number" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="delivery-location">Delivery Location</label>
+                            <input type="text" id="delivery-location">
+                        </div>
+                        <div class="form-group">
+                            <label for="notes">Special Instructions</label>
+                            <textarea id="notes"></textarea>
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="cart">
+                    <h2>Shopping Cart</h2>
+                    <ul id="cart-items">
+                        <!-- Cart items will be loaded dynamically -->
+                    </ul>
+                    <p id="total"><strong>Total:</strong> ₦<span id="cart-total">0</span></p>
+                    <button class="btn btn-whatsapp" id="send-whatsapp-btn">
+                        <i class="fab fa-whatsapp"></i> Send Order via WhatsApp
+                    </button>
+                    <button class="btn btn-outline" data-page="products">Continue Shopping</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo" style="margin-bottom: 15px;">
+                        <div class="logo-img">
+                            <div style="color: white; font-size: 1.5rem; font-weight: bold;">GLG</div>
+                        </div>
+                        <div>
+                            <div class="logo-text" style="color: white; background: none; -webkit-text-fill-color: white;">God's Love Gadgets</div>
+                        </div>
+                    </div>
+                    <p>Providing quality phone accessories and gadgets at affordable prices with excellent customer service.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/share/1AsNsy5AQn/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/glc_608?igsh=dTFzbmlqNDdyMXh4" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/2349013755971" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" data-page="home">Home</a></li>
+                        <li><a href="#" data-page="products">Products</a></li>
+                        <li><a href="#" data-page="about">About Us</a></li>
+                        <li><a href="#" data-page="contact">Contact Us</a></li>
+                        <li><a href="#" data-page="cart">Shopping Cart</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Business Hours</h3>
+                    <ul class="footer-links">
+                        <li>Monday - Friday: 9am - 5pm</li>
+                        <li>Saturday: 10am - 4pm</li>
+                        <li>Home Delivery: Available</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> Ibadan, Nigeria</li>
+                        <li><i class="fas fa-phone"></i> 09013755971</li>
+                        <li><i class="fas fa-envelope"></i> pauloluwanifemi608@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                &copy; <span id="current-year">2025</span> God's Love Gadgets. All Rights Reserved. | Designed with ❤️ by Paul Oluwanifemi
+            </div>
+        </div>
+    </footer>
+
+    <!-- Product Detail Modal -->
+    <div class="modal" id="product-modal">
+        <div class="modal-content">
+            <button class="close-modal">&times;</button>
+            <div class="product-modal">
+                <div class="product-modal-image">
+                    <img id="modal-product-image" src="" alt="">
+                </div>
+                <div class="product-modal-info">
+                    <div class="product-brand" id="modal-product-brand"></div>
+                    <h2 id="modal-product-name"></h2>
+                    <div class="product-rating">
+                        <div class="stars" id="modal-product-rating"></div>
+                        <span class="rating-count" id="modal-rating-count"></span>
+                    </div>
+                    <div class="price" id="modal-product-price"></div>
+                    <div class="stock-info" id="modal-stock-info"></div>
+                    <p id="modal-product-description"></p>
+                    
+                    <div class="quantity-controls">
+                        <button class="quantity-btn" id="decrease-quantity">-</button>
+                        <span class="quantity" id="product-quantity">1</span>
+                        <button class="quantity-btn" id="increase-quantity">+</button>
+                    </div>
+                    
+                    <button class="btn" id="add-to-cart-modal">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        // Set current year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Product database (all in stock)
+        const products = [
+            {
+                id: 1,
+                name: "AirPods Pro (2nd Gen)",
+                brand: "Apple",
+                price: 7500,
+                originalPrice: 8500,
+                image: "AIRPOD.jpg",
+                category: "earphones",
+                rating: 4.5,
+                ratingCount: 128,
+                description: "Premium wireless earbuds with active noise cancellation and transparency mode for immersive sound experience.",
+                stock: 25,
+                specs: ["Wireless", "Noise Cancelling", "24h Battery"]
+            },
+            {
+                id: 2,
+                name: "45W Fast Charger",
+                brand: "Shplus",
+                price: 4500,
+                originalPrice: 6000,
+                image: "Charger.jpg",
+                category: "charger",
+                rating: 4.8,
+                ratingCount: 210,
+                description: "Compact 45W fast charger compatible with all USB-C devices. Charges your phone up to 70% in just 30 minutes.",
+                stock: 42,
+                specs: ["45W Fast Charging", "Compact Design", "Overheat Protection"]
+            },
+            {
+                id: 3,
+                name: "Flip 6 Portable Headphone",
+                brand: "JBL",
+                price: 20000,
+                originalPrice: 22000,
+                image: "JBL.jpg",
+                category: "speaker",
+                rating: 4.2,
+                ratingCount: 89,
+                description: "Waterproof portable speaker with premium sound quality and 12 hours of continuous playtime.",
+                stock: 15,
+                specs: ["Waterproof", "12h Playtime", "Bluetooth 5.0"]
+            },
+            {
+                id: 4,
+                name: "Rugged Armor Phone Case",
+                brand: "Phone Pouch",
+                price: 2000,
+                originalPrice: 2500,
+                image: "Phone case.jpg",
+                category: "case",
+                rating: 4.9,
+                ratingCount: 243,
+                description: "Military-grade protection with shock-absorbent technology to safeguard your phone from drops and impacts.",
+                stock: 30,
+                specs: ["Military Protection", "Shock Absorbent", "Slim Design"]
+            },
+            {
+                id: 5,
+                name: "Powerbank 20000mah",
+                brand: "Philly",
+                price: 16500,
+                originalPrice: 18000,
+                image: "Philly Powerbank.jpg",
+                category: "powerbank",
+                rating: 4.3,
+                ratingCount: 95,
+                description: "High-capacity power bank with wireless charging capability. Can charge multiple devices simultaneously.",
+                stock: 18,
+                specs: ["Wireless Charging", "21800mAh", "Dual Output"]
+            },
+            {
+                id: 6,
+                name: "Superbass Speakers",
+                brand: "Zealot",
+                price: 25000,
+                originalPrice: 45000,
+                image: "Zealot.jpg",
+                category: "speaker",
+                rating: 4.6,
+                ratingCount: 76,
+                description: "Powerful Bluetooth speakers with deep bass and 360° sound. Perfect for parties and outdoor gatherings.",
+                stock: 8,
+                specs: ["Super Bass", "Waterproof", "20h Playtime"]
+            },
+            {
+                id: 7,
+                name: "Type-c Wireless Microphone",
+                brand: "K8",
+                price: 15000,
+                originalPrice: 17000,
+                image: "Type-c Microphone.jpg",
+                category: "accessories",
+                rating: 4.4,
+                ratingCount: 52,
+                description: "Professional-grade wireless microphone with noise cancellation for crystal clear audio recording.",
+                stock: 22,
+                specs: ["Noise Cancelling", "Wireless", "10m Range"]
+            },
+            {
+                id: 8,
+                name: "Powerbank 20000mah",
+                brand: "Itel",
+                price: 18000,
+                originalPrice: 20000,
+                image: "Itel Powerbank.jpg",
+                category: "powerbank",
+                rating: 4.1,
+                ratingCount: 67,
+                description: "Fast charging power bank with LED display. Charges your devices quickly and efficiently.",
+                stock: 30,
+                specs: ["Fast Charging", "LED Display", "20000mAh"]
+            }
+            
+        ];
+
+        // Initialize cart
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+        let currentProduct = null;
+        let currentQuantity = 1;
+
+        // DOM ready
+        $(document).ready(function() {
+            // Initialize pages
+            renderProducts();
+            renderCart();
+            updateCartCount();
+            setupEventListeners();
+            
+            // Mobile menu toggle
+            $('.mobile-menu-btn').click(function() {
+                $('#nav-menu').toggleClass('show');
+                const icon = $(this).find('i');
+                if ($('#nav-menu').hasClass('show')) {
+                    icon.removeClass('fa-bars').addClass('fa-times');
+                } else {
+                    icon.removeClass('fa-times').addClass('fa-bars');
+                }
+            });
+        });
+
+        // Render products
+        function renderProducts(filteredProducts = products) {
+            const productGrid = $('.product-grid');
+            productGrid.empty();
+            
+            if (filteredProducts.length === 0) {
+                productGrid.html('<p class="no-products" style="grid-column: 1/-1; text-align: center; padding: 2rem; font-size: 1.1rem;">No products found matching your criteria</p>');
+                return;
+            }
+            
+            filteredProducts.forEach(product => {
+                const productCard = `
+                    <div class="product-card" data-id="${product.id}">
+                        ${product.originalPrice > product.price ? 
+                            `<div class="product-badges">
+                                <span class="badge discount">-${Math.round((1 - product.price / product.originalPrice) * 100)}%</span>
+                            </div>` : 
+                            product.id % 3 === 0 ? 
+                            `<div class="product-badges">
+                                <span class="badge new">New</span>
+                            </div>` : ''
+                        }
+                        ${product.stock <= 5 ? 
+                            `<div class="product-badges" style="left: auto; right: 10px;">
+                                <span class="badge stock">Low Stock</span>
+                            </div>` : ''
+                        }
+                        <div class="product-image" data-id="${product.id}">
+                            <img src="${product.image}" alt="${product.name}">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-brand">${product.brand}</div>
+                            <h3>${product.name}</h3>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    ${renderStars(product.rating)}
+                                </div>
+                                <span class="rating-count">(${product.ratingCount})</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">₦${product.price.toLocaleString()}</span>
+                                ${product.originalPrice > product.price ? 
+                                    `<span class="original-price">₦${product.originalPrice.toLocaleString()}</span>` : ''
+                                }
+                            </div>
+                            <div class="product-specs">
+                                ${product.specs.map(spec => `<span>${spec}</span>`).join('')}
+                            </div>
+                            <button class="btn add-to-cart-btn" data-id="${product.id}">
+                                <i class="fas fa-shopping-cart"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                `;
+                productGrid.append(productCard);
+            });
+        }
+
+        // Render cart
+        function renderCart() {
+            const cartItems = $('#cart-items');
+            cartItems.empty();
+            
+            let total = 0;
+            
+            if (cart.length === 0) {
+                cartItems.append('<li style="text-align: center; padding: 1.5rem;">Your cart is empty</li>');
+                $('#cart-total').text('0');
+                return;
+            }
+            
+            cart.forEach(item => {
+                const product = products.find(p => p.id === item.id);
+                if (!product) return;
+                
+                const subtotal = product.price * item.quantity;
+                total += subtotal;
+                
+                const cartItem = `
+                    <li data-id="${item.id}">
+                        <div class="cart-item-details">
+                            <img src="${product.image}" alt="${product.name}" style="width: 45px; height: 45px; object-fit: cover; border-radius: 5px;">
+                            <div>
+                                <div>${product.name}</div>
+                                <div>₦${product.price.toLocaleString()} x ${item.quantity}</div>
+                            </div>
+                        </div>
+                        <div class="cart-item-price">₦${subtotal.toLocaleString()}</div>
+                        <div class="cart-item-actions">
+                            <button class="remove-item"><i class="fas fa-trash"></i></button>
+                        </div>
+                    </li>
+                `;
+                cartItems.append(cartItem);
+            });
+            
+            $('#cart-total').text(total.toLocaleString());
+        }
+
+        // Render stars based on rating
+        function renderStars(rating) {
+            let stars = '';
+            const fullStars = Math.floor(rating);
+            const halfStar = rating % 1 >= 0.5;
+            
+            for (let i = 0; i < fullStars; i++) {
+                stars += '<i class="fas fa-star"></i>';
+            }
+            
+            if (halfStar) {
+                stars += '<i class="fas fa-star-half-alt"></i>';
+            }
+            
+            const emptyStars = 5 - fullStars - (halfStar ? 1 : 0);
+            for (let i = 0; i < emptyStars; i++) {
+                stars += '<i class="far fa-star"></i>';
+            }
+            
+            return stars;
+        }
+
+        // Update cart count
+        function updateCartCount() {
+            const count = cart.reduce((total, item) => total + item.quantity, 0);
+            $('#cart-count').text(count);
+            $('#floating-cart-count').text(count);
+        }
+        
+        // Show toast notification
+        function showToast(message) {
+            const toast = $('#toast');
+            toast.text(message);
+            toast.fadeIn(300);
+            
+            setTimeout(() => {
+                toast.fadeOut(300);
+            }, 3000);
+        }
+
+        // Setup event listeners
+        function setupEventListeners() {
+            // Page navigation
+            $('.nav-link').click(function(e) {
+                e.preventDefault();
+                $('.nav-link').removeClass('active');
+                $(this).addClass('active');
+                $('.page').removeClass('active');
+                const pageId = $(this).data('page');
+                $(`#${pageId}`).addClass('active');
+                
+                // Close mobile menu when a link is clicked
+                if ($('#nav-menu').hasClass('show')) {
+                    $('#nav-menu').removeClass('show');
+                    $('.mobile-menu-btn i').removeClass('fa-times').addClass('fa-bars');
+                }
+                
+                window.scrollTo(0, 0);
+            });
+
+            // Footer link navigation
+            $('.footer-links a').click(function(e) {
+                e.preventDefault();
+                const pageId = $(this).data('page');
+                $('.page').removeClass('active');
+                $(`#${pageId}`).addClass('active');
+                
+                // Update active nav link
+                $('.nav-link').removeClass('active');
+                $(`.nav-link[data-page="${pageId}"]`).addClass('active');
+                
+                window.scrollTo(0, 0);
+            });
+
+            // Add to cart button
+            $('.product-grid').on('click', '.add-to-cart-btn', function() {
+                const productId = $(this).data('id');
+                const product = products.find(p => p.id == productId);
+                
+                const existingItem = cart.find(item => item.id == productId);
+                
+                if (existingItem) {
+                    existingItem.quantity++;
+                } else {
+                    cart.push({
+                        id: product.id,
+                        name: product.name,
+                        price: product.price,
+                        image: product.image,
+                        quantity: 1
+                    });
+                }
+                
+                localStorage.setItem('cart', JSON.stringify(cart));
+                updateCartCount();
+                showToast(`${product.name} added to cart!`);
+            });
+
+            // Remove item from cart
+            $('#cart-items').on('click', '.remove-item', function() {
+                const listItem = $(this).closest('li');
+                const productId = listItem.data('id');
+                const product = products.find(p => p.id == productId);
+                
+                cart = cart.filter(item => item.id != productId);
+                localStorage.setItem('cart', JSON.stringify(cart));
+                
+                updateCartCount();
+                renderCart();
+                showToast(`${product.name} removed from cart`);
+            });
+
+            // Product image click (quick view)
+            $('.product-grid').on('click', '.product-image', function() {
+                const productId = $(this).data('id');
+                currentProduct = products.find(p => p.id == productId);
+                currentQuantity = 1;
+                showProductModal(currentProduct);
+            });
+
+            // Close modal
+            $('.close-modal').click(function() {
+                $('#product-modal').hide();
+            });
+
+            // Add to cart from modal
+            $('#add-to-cart-modal').click(function() {
+                const existingItem = cart.find(item => item.id == currentProduct.id);
+                
+                if (existingItem) {
+                    existingItem.quantity += currentQuantity;
+                } else {
+                    cart.push({
+                        id: currentProduct.id,
+                        name: currentProduct.name,
+                        price: currentProduct.price,
+                        image: currentProduct.image,
+                        quantity: currentQuantity
+                    });
+                }
+                
+                localStorage.setItem('cart', JSON.stringify(cart));
+                updateCartCount();
+                showToast(`${currentQuantity} ${currentProduct.name} added to cart!`);
+                $('#product-modal').hide();
+            });
+            
+            // Quantity controls in modal
+            $('#increase-quantity').click(function() {
+                currentQuantity++;
+                $('#product-quantity').text(currentQuantity);
+            });
+            
+            $('#decrease-quantity').click(function() {
+                if (currentQuantity > 1) {
+                    currentQuantity--;
+                    $('#product-quantity').text(currentQuantity);
+                }
+            });
+
+            // Continue shopping button in cart
+            $('.btn-outline[data-page="products"]').click(function() {
+                $('.nav-link').removeClass('active');
+                $('.page').removeClass('active');
+                $('#products').addClass('active');
+                $('.nav-link[data-page="products"]').addClass('active');
+                window.scrollTo(0, 0);
+            });
+            
+            // Search functionality
+            $('#search-btn').click(function() {
+                performSearch();
+            });
+            
+            $('#search-input').keypress(function(e) {
+                if (e.which === 13) { // Enter key
+                    performSearch();
+                }
+            });
+            
+            // Social media contact
+            $('#whatsapp-contact').click(function() {
+                window.open('https://wa.me/2349013755971', '_blank');
+            });
+            
+            $('#instagram-contact').click(function() {
+                window.open('https://www.instagram.com/glc_608?igsh=dTFzbmlqNDdyMXh4', '_blank');
+            });
+            
+            $('#facebook-contact').click(function() {
+                window.open('https://www.facebook.com/share/1AsNsy5AQn/', '_blank');
+            });
+            
+            $('#phone-contact').click(function() {
+                window.location.href = 'tel:+2349013755971';
+            });
+            
+            // Floating cart button
+            $('.cart-indicator').click(function() {
+                $('.nav-link').removeClass('active');
+                $('.page').removeClass('active');
+                $('#cart').addClass('active');
+                $('.nav-link[data-page="cart"]').addClass('active');
+                window.scrollTo(0, 0);
+            });
+            
+            // Send message button
+            $('#send-message').click(function() {
+                const name = $('#name').val();
+                const email = $('#email').val();
+                const phone = $('#phone').val();
+                const message = $('#message').val();
+                
+                if (!name || !phone || !message) {
+                    showToast('Please fill in all required fields');
+                    return;
+                }
+                
+                const whatsappMessage = `New Message from God's Love Gadgets Website%0A%0AName: ${name}%0APhone: ${phone}%0A${email ? 'Email: ' + email + '%0A' : ''}Message: ${message}`;
+                
+                window.open(`https://wa.me/2349013755971?text=${whatsappMessage}`, '_blank');
+            });
+            
+            // Send order via WhatsApp
+            $('#send-whatsapp-btn').click(function() {
+                const name = $('#full-name').val();
+                const phone = $('#phone-number').val();
+                const location = $('#delivery-location').val();
+                const notes = $('#notes').val();
+                
+                if (!name || !phone) {
+                    showToast('Please fill in your name and phone number');
+                    return;
+                }
+                
+                if (cart.length === 0) {
+                    showToast('Your cart is empty');
+                    return;
+                }
+                
+                // Generate WhatsApp message
+                let message = `New Order from God's Love Gadgets Website%0A%0A`;
+                message += `*Customer Information:*%0A`;
+                message += `Name: ${name}%0A`;
+                message += `Phone: ${phone}%0A`;
+                if (location) message += `Location: ${location}%0A`;
+                if (notes) message += `Notes: ${notes}%0A`;
+                
+                message += `%0A*Order Items:*%0A`;
+                
+                let total = 0;
+                cart.forEach(item => {
+                    const product = products.find(p => p.id === item.id);
+                    const subtotal = product.price * item.quantity;
+                    total += subtotal;
+                    message += `- ${product.name} (${product.brand})%0A`;
+                    message += `  ₦${product.price.toLocaleString()} x ${item.quantity} = ₦${subtotal.toLocaleString()}%0A`;
+                });
+                
+                message += `%0A*Total:* ₦${total.toLocaleString()}`;
+                
+                window.open(`https://wa.me/2349013755971?text=${message}`, '_blank');
+            });
+        }
+
+        // Perform search and filtering
+        function performSearch() {
+            const searchTerm = $('#search-input').val().toLowerCase();
+            
+            const filteredProducts = products.filter(product => {
+                // Search term matching
+                const matchesSearch = searchTerm === '' || 
+                    product.name.toLowerCase().includes(searchTerm) || 
+                    product.brand.toLowerCase().includes(searchTerm) || 
+                    product.description.toLowerCase().includes(searchTerm);
+                
+                return matchesSearch;
+            });
+            
+            renderProducts(filteredProducts);
+        }
+
+        // Show product modal
+        function showProductModal(product) {
+            $('#modal-product-image').attr('src', product.image);
+            $('#modal-product-brand').text(product.brand);
+            $('#modal-product-name').text(product.name);
+            $('#modal-product-rating').html(renderStars(product.rating));
+            $('#modal-rating-count').text(`(${product.ratingCount})`);
+            $('#product-quantity').text(currentQuantity);
+            
+            if (product.originalPrice > product.price) {
+                $('#modal-product-price').html(`
+                    <span class="current-price">₦${product.price.toLocaleString()}</span>
+                    <span class="original-price">₦${product.originalPrice.toLocaleString()}</span>
+                `);
+            } else {
+                $('#modal-product-price').html(`<span class="current-price">₦${product.price.toLocaleString()}</span>`);
+            }
+            
+            let stockInfo = '';
+            if (product.stock <= 5 && product.stock > 0) {
+                stockInfo = `<div class="stock-info">Only ${product.stock} left in stock</div>`;
+            } else if (product.stock > 5) {
+                stockInfo = '<div class="stock-info">In Stock</div>';
+            } else {
+                stockInfo = '<div class="stock-info">Out of Stock</div>';
+            }
+            $('#modal-stock-info').html(stockInfo);
+            
+            $('#modal-product-description').text(product.description);
+            $('#product-modal').show();
+        }
+    </script>
+</body>
+</html>
